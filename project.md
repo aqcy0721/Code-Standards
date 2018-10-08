@@ -36,24 +36,19 @@
 例：my_project_name
 
 
-## 3 项目命名
+## 3 目录命名
 
 参照项目命名规则,有复数结构时，要采用复数命名法。
 
 例：scripts, styles, images
 
-## 4 目录命名
+## 4 HTML命名
 
 HTML的命名原则引文件统一使用index.htm index.html index.asp文件名(小写)，各子页命名的原则首先应该以栏目名的英语翻译取单一单词为名称。
 
 例如: 关于我们 / aboutus 信息反馈 / feedback 产 品 / product
 
-## 5 HTML命名
-HTML的命名原则引文件统一使用index.htm index.html index.asp文件名(小写)，各子页命名的原则首先应该以栏目名的英语翻译取单一单词为名称。
-
-例如: 关于我们 / aboutus 信息反馈 / feedback 产 品 / product
-
-## 6 CSS命名
+## 5 CSS命名
 
 参照项目命名规则；
 
@@ -147,13 +142,13 @@ HTML的命名原则引文件统一使用index.htm index.html index.asp文件名(
 	- **版权:copyright**
 
 
-## 7 JS命名
+## 6 JS命名
 
 参照项目命名规则。
 
 例：about_animate.js
 
-## 8 图片命名
+## 7 图片命名
 参照项目命名规则,有复数结构时，要采用复数命名法。
 
 1. 图片的名称分为头尾两部分，用下划线隔开，头部分表示此图片的大类性质，例如：广告、标志、菜单、按钮等等 
