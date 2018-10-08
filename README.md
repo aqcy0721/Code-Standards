@@ -3,9 +3,9 @@
 ## 规范
 
 * [项目命名规范](./project.md)
-* [Javascript 编码规范](./javascript.md)
-* [CSS 编码规范](./css.md)
 * [HTML 编码规范](./html.md)
+* [CSS 编码规范](./css.md)
+* [Javascript 编码规范](./javascript.md)
 * [Markdown 编写规范](./markdown.md)
 
 ## 计划
