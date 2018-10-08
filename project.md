@@ -160,5 +160,14 @@ HTML的命名原则引文件统一使用index.htm index.html index.asp文件名(
 	25. 装饰用的照片我们取名：pic
 	26. 不带链接表示标题的图片我们取名：title
 3. 范例
-	
-	1. 请问
+	1. banner_sohu.gif
+
+	2. banner_sina.gif
+
+	3. menu_aboutus.gif
+
+	4. menu_job.gif
+
+	5. title_news.gif
+
+	6. logo_police.gif
