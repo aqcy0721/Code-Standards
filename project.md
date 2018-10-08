@@ -10,7 +10,7 @@
 
 [3 目录命名](#3-目录命名)　
 
-[4 HTML命名](#4-HTML%E5%91%BD%E5%90%8D)　
+[4 HTML命名](#4-HTML-命名)　
 
 [5 CSS命名](#5-CSS命名)　
 
@@ -153,16 +153,16 @@ HTML的命名原则引文件统一使用index.htm index.html index.asp文件名(
 
 1. 图片的名称分为头尾两部分，用下划线隔开，头部分表示此图片的大类性质，例如：广告、标志、菜单、按钮等等 
 2. 常规命名
-	1. 放置在页面顶部的广告、装饰图案等长方形的图片取名：banner
-	2. 标志性的图片取名为：logo
-	3. 在页面位置不固定并且带有链接的小图片我们取名：button
-	4. 在页面上某一个位置连续出现，性质相同的链接栏目的图片我们取名：menu
-	5. 装饰用的照片我们取名：pic
-	6. 不带链接表示标题的图片我们取名：title
+	21. 放置在页面顶部的广告、装饰图案等长方形的图片取名：banner
+	22. 标志性的图片取名为：logo
+	23. 在页面位置不固定并且带有链接的小图片我们取名：button
+	24. 在页面上某一个位置连续出现，性质相同的链接栏目的图片我们取名：menu
+	25. 装饰用的照片我们取名：pic
+	26. 不带链接表示标题的图片我们取名：title
 3. 范例
-	1. banner_sohu.gif
-	2. banner_sina.gif
-	3. menu_aboutus.gif
-	4. menu_job.gif
-	5. title_news.gif
-	6. logo_police.gif
+	31. banner_sohu.gif
+	32. banner_sina.gif
+	33. menu_aboutus.gif
+	34. menu_job.gif
+	35. title_news.gif
+	36. logo_police.gif
