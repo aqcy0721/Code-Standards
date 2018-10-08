@@ -437,7 +437,7 @@ title 中如果包含 ascii 之外的字符，浏览器需要知道字符编码�
 <link rel="shortcut icon" href="path/to/favicon.ico">
 ```
 
-### 4.3 viewport
+### 3.3 viewport
 
 
 #### [建议] 若页面欲对移动设备友好，需指定页面的 `viewport`。
