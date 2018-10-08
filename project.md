@@ -42,7 +42,7 @@
 
 例：scripts, styles, images
 
-## 4 HTML命名
+## 4 HTML 命名
 
 HTML的命名原则引文件统一使用index.htm index.html index.asp文件名(小写)，各子页命名的原则首先应该以栏目名的英语翻译取单一单词为名称。
 
