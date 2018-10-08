@@ -33,15 +33,15 @@
 
 　　[3.3 viewport](#33-viewport)
 
-[4 图片](#5-%E5%9B%BE%E7%89%87)
+[4 图片](#4-%E5%9B%BE%E7%89%87)
 
-[5 表单](#6-%E8%A1%A8%E5%8D%95)
+[5 表单](#5-%E8%A1%A8%E5%8D%95)
 
-　　[5.1 控件标题](#61-%E6%8E%A7%E4%BB%B6%E6%A0%87%E9%A2%98)
+　　[5.1 控件标题](#51-%E6%8E%A7%E4%BB%B6%E6%A0%87%E9%A2%98)
 
-　　[5.2 按钮](#62-%E6%8C%89%E9%92%AE)
+　　[5.2 按钮](#52-%E6%8C%89%E9%92%AE)
 
-[6 多媒体](#7-%E5%A4%9A%E5%AA%92%E4%BD%93)
+[6 多媒体](#6-%E5%A4%9A%E5%AA%92%E4%BD%93)
 
 
 
@@ -55,7 +55,7 @@
 #### [强制] 使用 `4` 个空格做为一个缩进层级，不允许使用 `2` 个空格 或 `tab` 字符。
 
 
-示例：
+例如：
 
 ```html
 <ul>
@@ -64,22 +64,12 @@
 </ul>
 ```
 
-#### [建议] 每行不得超过 `120` 个字符。
+### 1.2 命名
 
-解释：
-
-过长的代码不容易阅读与维护。但是考虑到 HTML 的特殊性，不做硬性要求。
-
-
-### 2.2 命名
-
-
-
-#### [强制] `class` 必须单词全字母小写，单词间以 `-` 分隔。
 
 #### [强制] `class` 必须代表相应模块或部件的内容或功能，不得以样式信息进行命名。
 
-示例：
+例如：
 
 ```html
 <!-- good -->
@@ -96,29 +86,8 @@
 同一个页面中，不同的元素包含相同的 id，不符合 id 的属性含义。并且使用 document.getElementById 时可能导致难以追查的问题。
 
 
-#### [建议] `id` 建议单词全字母小写，单词间以 `-` 分隔。同项目必须保持风格一致。
+#### [建议] `id` 建议单词全字母小写，单词间以 `_` 分隔。同项目必须保持风格一致。
 
-
-#### [建议] `id`、`class` 命名，在避免冲突并描述清楚的前提下尽可能短。
-
-示例：
-
-```html
-<!-- good -->
-<div id="nav"></div>
-<!-- bad -->
-<div id="navigation"></div>
-
-<!-- good -->
-<p class="comment"></p>
-<!-- bad -->
-<p class="com"></p>
-
-<!-- good -->
-<span class="author"></span>
-<!-- bad -->
-<span class="red"></span>
-```
 
 #### [强制] 禁止为了 `hook 脚本`，创建无样式信息的 `class`。
 
@@ -149,20 +118,12 @@ alert(document.getElementById('foo').tagName);
 ````
 
 
-### 2.3 标签
+### 1.3 标签
 
+###  [强制] 在JS文件中生成标签让内容变得更难查找，更难编辑，性能更差。应该尽量避免这种情况的出现。
 
 #### [强制] 标签名必须使用小写字母。
 
-示例：
-
-```html
-<!-- good -->
-<p>Hello StyleGuide!</p>
-
-<!-- bad -->
-<P>Hello StyleGuide!</P>
-```
 
 #### [强制] 对于无需自闭合的标签，不允许自闭合。
 
@@ -182,28 +143,6 @@ alert(document.getElementById('foo').tagName);
 ```
 
 #### [强制] 对 `HTML5` 中规定允许省略的闭合标签，不允许省略闭合标签。
-
-解释：
-
-对代码体积要求非常严苛的场景，可以例外。比如：第三方页面使用的投放系统。
-
-
-示例：
-
-```html
-<!-- good -->
-<ul>
-    <li>first</li>
-    <li>second</li>
-</ul>
-
-<!-- bad -->
-<ul>
-    <li>first
-    <li>second
-</ul>
-```
-
 
 #### [强制] 标签使用必须符合标签嵌套规则。
 
@@ -248,11 +187,6 @@ alert(document.getElementById('foo').tagName);
 
 #### [建议] 在 `CSS` 可以实现相同需求的情况下不得使用表格进行布局。
 
-解释：
-
-在兼容性允许的情况下应尽量保持语义正确性。对网格对齐和拉伸性有严格要求的场景允许例外，如多列复杂表单。
-
-
 #### [建议] 标签的使用应尽量简洁，减少不必要的标签。
 
 示例：
@@ -269,20 +203,10 @@ alert(document.getElementById('foo').tagName);
 
 
 
-### 2.4 属性
+### 1.4 属性
 
 
 #### [强制] 属性名必须使用小写字母。
-
-示例：
-
-```html
-<!-- good -->
-<table cellspacing="0">...</table>
-
-<!-- bad -->
-<table cellSpacing="0">...</table>
-```
 
 
 #### [强制] 属性值必须用双引号包围。
@@ -326,13 +250,37 @@ alert(document.getElementById('foo').tagName);
 <ol data-ui-type="Select"></ol>
 ```
 
+### 1.5 属性顺序
+
+#### [建议] 属性应该按照特定的顺序出现以保证易读性。
+
+- p - 段落
+- h1,h2,h3,h4,h5,h6 - 层级标题
+- strong,em - 强调
+- ins - 插入
+- del - 删除
+- abbr - 缩写
+- code - 代码标识
+- cite - 引述来源作品的标题
+- q - 引用
+- blockquote - 一段或长篇引用
+- ul - 无序列表
+- ol - 有序列表
+- dl,dt,dd - 定义列表
+1. class是为高可复用组件设计的，所以应处在第一位。
+2. id更加具体且应该尽量少使用，所以将它放在第二位。
+
+示例：
+
+```html
+    <input class="form-control" type="text">
+	<img class="avatar" src="image.png">
+```
+
+## 2 通用
 
 
-
-## 3 通用
-
-
-### 3.1 DOCTYPE
+### 2.1 DOCTYPE
 
 
 #### [强制] 使用 `HTML5` 的 `doctype` 来启用标准模式，建议使用大写的 `DOCTYPE`。
@@ -446,24 +394,6 @@ UTF-8 编码具有更广泛的适应性。BOM 在使用程序或工具处理文�
 ```
 
 
-#### [建议] 移动环境或只针对现代浏览器设计的 Web 应用，如果引用外部资源的 `URL` 协议部分与页面相同，建议省略协议前缀。
-
-解释：
-
-使用 `protocol-relative URL` 引入 CSS，在 `IE7/8` 下，会发两次请求。是否使用 `protocol-relative URL` 应充分考虑页面针对的环境。
-
-
-示例：
-
-```html
-<script src="//s1.bdstatic.com/cache/static/jquery-1.10.2.min_f2fb5194.js"></script>
-```
-
-
-
-
-
-
 ## 4 head
 
 
@@ -517,10 +447,6 @@ title 中如果包含 ascii 之外的字符，浏览器需要知道字符编码�
 viewport meta tag可以设置可视区域的宽度和初始缩放大小，避免在移动设备上出现页面展示不正常。
 
 比如，在页面宽度小于 980px 时，若需 iOS 设备友好，应当设置 viewport 的 width 值来适应你的页面宽度。同时因为不同移动设备分辨率不同，在设置时，应当使用 device-width 和 device-height 变量。
-
-另外，为了使 viewport 正常工作，在页面内容样式布局设计上也要做相应调整，如避免绝对定位等。关于 viewport 的更多介绍，可以参见 [Safari Web Content Guide的介绍](https://developer.apple.com/library/mac/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509-SW26)
-
-
 
 
 ## 5 图片
@@ -608,45 +534,7 @@ button 元素的默认 type 为 submit，如果被置于 form 元素中，点击
 由于浏览器兼容性问题，使用按钮的 name 属性会带来许多难以发现的问题。具体情况可参考[此文](http://w3help.org/zh-cn/causes/CM2001)。
 
 
-### 6.3 可访问性 (A11Y)
 
-
-#### [建议] 负责主要功能的按钮在 `DOM` 中的顺序应靠前。
-
-解释：
-
-负责主要功能的按钮应相对靠前，以提高可访问性。如果在 CSS 中指定了 `float: right` 则可能导致视觉上主按钮在前，而 DOM 中主按钮靠后的情况。
-
-
-示例：
-
-```html
-<!-- good -->
-<style>
-.buttons .button-group {
-    float: right;
-}
-</style>
-
-<div class="buttons">
-    <div class="button-group">
-        <button type="submit">提交</button>
-        <button type="button">取消</button>
-    </div>
-</div>
-
-<!-- bad -->
-<style>
-.buttons button {
-    float: right;
-}
-</style>
-
-<div class="buttons">
-    <button type="button">取消</button>
-    <button type="submit">提交</button>
-</div>
-```
 
 #### [建议] 当使用 `JavaScript` 进行表单提交时，如果条件允许，应使原生提交功能正常工作。
 
@@ -676,9 +564,6 @@ button 元素的默认 type 为 submit，如果被置于 form 元素中，点击
 ```html
 <input type="date">
 ```
-
-
-
 
 
 ## 7 多媒体
@@ -734,82 +619,6 @@ button 元素的默认 type 为 submit，如果被置于 form 元素中，点击
 
 ```html
 <object width="100" height="50" data="something.swf">DO NOT SUPPORT THIS TAG</object>
-```
-
-
-
-
-## 8 模板中的 HTML
-
-
-#### [建议] 模板代码的缩进优先保证 `HTML` 代码的缩进规则。
-
-示例：
-
-```html
-<!-- good -->
-{if $display == true}
-<div>
-    <ul>
-    {foreach $item_list as $item}
-        <li>{$item.name}<li>
-    {/foreach}
-    </ul>
-</div>
-{/if}
-
-<!-- bad -->
-{if $display == true}
-    <div>
-        <ul>
-    {foreach $item_list as $item}
-        <li>{$item.name}<li>
-    {/foreach}
-        </ul>
-    </div>
-{/if}
-```
-
-#### [建议] 模板代码应以保证 `HTML` 单个标签语法的正确性为基本原则。
-
-示例：
-
-```html
-<!-- good -->
-<li class="{if $item.type_id == $current_type}focus{/if}">{ $item.type_name }</li>
-
-<!-- bad -->
-<li {if $item.type_id == $current_type} class="focus"{/if}>{ $item.type_name }</li>
-```
-
-#### [建议] 在循环处理模板数据构造表格时，若要求每行输出固定的个数，建议先将数据分组，之后再循环输出。
-
-示例：
-
-```html
-<!-- good -->
-<table>
-    {foreach $item_list as $item_group}
-    <tr>
-        {foreach $item_group as $item}
-        <td>{ $item.name }</td>
-        {/foreach}
-    <tr>
-    {/foreach}
-</table>
-
-<!-- bad -->
-<table>
-<tr>
-    {foreach $item_list as $item}
-    <td>{ $item.name }</td>
-        {if $item@iteration is div by 5}
-    </tr>
-    <tr>
-        {/if}
-    {/foreach}
-</tr>
-</table>
 ```
 
 
