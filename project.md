@@ -10,11 +10,11 @@
 
 [3 目录命名](#3-目录命名)　
 
-[4 HTML命名](#4-HTML-命名)　
+[4 HTML 命名](#4-HTML-命名)　
 
-[5 CSS命名](#5-CSS命名)　
+[5 CSS 命名](#5-CSS-命名)　
 
-[6 JS命名](#6-JS命名)　
+[6 JS 命名](#6-JS-命名)　
 
 [7 图片命名](#7-图片命名)　
 
@@ -48,7 +48,7 @@ HTML的命名原则引文件统一使用index.htm index.html index.asp文件名(
 
 例如: 关于我们 / aboutus 信息反馈 / feedback 产 品 / product
 
-## 5 CSS命名
+## 5 CSS 命名
 
 参照项目命名规则；
 
@@ -142,7 +142,7 @@ HTML的命名原则引文件统一使用index.htm index.html index.asp文件名(
 	- **版权:copyright**
 
 
-## 6 JS命名
+## 6 JS 命名
 
 参照项目命名规则。
 
