@@ -114,14 +114,12 @@ body {
 ```
 
 #### 8.[强制]文件保存路径
-```
-    style
-    images  图片文件夹
-    js  js文件夹
-    css  css文件夹
-    base.css
-    img  背景图片文件夹
-```
+
+- app(项目名)
+  - images (图片文件夹)
+  - scripts (js文件夹)
+  - styles (样式文件夹)
+
 
 
 
