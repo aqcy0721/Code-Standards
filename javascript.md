@@ -351,7 +351,7 @@ orderData.price = 600;
 orderData.discount = 15;
 orderData.manageFee = 100;
 ```
-其实有一种更优雅的方式那就是使用Object.assign：
+其实有种更优雅的方式那就是使用Object.assign：
 
 ```
 var setOrderData = {
