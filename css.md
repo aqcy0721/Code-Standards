@@ -533,6 +533,177 @@ select{ -webkit-appearance: none; }
  
 /* 如果有输入内容IE会给输入框右边加一个大大的X */ 
 input::-ms-clear{ display: none; width: 0; height: 0; } 
+
+.ellipsis {
+  /* max-width: 300px; */
+  line-height: 25px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.m-ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* useful css class */
+.w{ width: 100%; }
+.tc {
+  text-align: center;
+}
+
+.bb {
+  border-bottom: 1px solid #ececec;
+}
+
+.ml {
+  margin-left: 20px;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.re {
+  position: relative;
+}
+
+.ab {
+  position: absolute;
+}
+
+.mt1 {
+  margin-top: 10px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+.pd {
+  padding: 20px;
+}
+
+.ov {
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
+.auto0 {
+  margin: 0 auto;
+}
+
+.mt {
+  margin-top: 20px;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.b-b {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.v-h-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.h-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.v-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.table-v-h-center {
+  text-align: center;
+}
+
+.table-v-h-center td,
+.table-v-h-center th {
+  vertical-align: middle;
+}
+
+.i-b {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.font12 {
+  font-size: 12px;
+}
+
+.font10 {
+  font-size: 10px;
+}
+
+.font14 {
+  font-size: 14px;
+}
+
+.font16 {
+  font-size: 16px;
+}
+
+.font18 {
+  font-size: 18px;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+  visibility: hidden;
+  height: 0;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+
 ```
 
 
